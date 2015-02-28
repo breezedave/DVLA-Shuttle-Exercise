@@ -1,4 +1,4 @@
-package shuttle.dsd.dvla.uk.gov.myapplication.resources;
+package gov.uk.dvla.dsd.shuttle.resources;
 
 import org.joda.time.DateTime;
 

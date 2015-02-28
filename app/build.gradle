@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "shuttle.dsd.dvla.uk.gov.myapplication"
+        applicationId "gov.uk.dvla.dsd.shuttle"
         minSdkVersion 8
         targetSdkVersion 21
         versionCode 1
