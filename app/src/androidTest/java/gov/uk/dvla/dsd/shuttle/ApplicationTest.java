@@ -1,4 +1,4 @@
-package shuttle.dsd.dvla.uk.gov.myapplication;
+package gov.uk.dvla.dsd.shuttle;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
@@ -8,10 +8,18 @@ import junit.framework.Assert;
 import org.joda.time.DateTime;
 
 
-import shuttle.dsd.dvla.uk.gov.myapplication.resources.Car;
-import shuttle.dsd.dvla.uk.gov.myapplication.resources.Cars;
-import shuttle.dsd.dvla.uk.gov.myapplication.resources.Destination;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
+import gov.uk.dvla.dsd.shuttle.resources.Cars;
+import gov.uk.dvla.dsd.shuttle.resources.Car;
+import gov.uk.dvla.dsd.shuttle.resources.Destination;
+import gov.uk.dvla.dsd.shuttle.HomeScreenActivity;
+import gov.uk.dvla.dsd.shuttle.resources.Locations;
+import gov.uk.dvla.dsd.shuttle.resources.ReadFromAsset;
 
 /**
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
@@ -104,4 +112,30 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         assertNull(resultCar3);
 
     }
+
+    public void testAssetLoad() {
+        String testFile = "testShuttles.txt";
+        String expectedCar = "A1";
+
+        ReadFromAsset readFromAsset = new ReadFromAsset();
+        Cars cars = readFromAsset.getCars(this.getContext(),testFile);
+        Car dummyCar = cars.getNextCar("Newport",new DateTime(0,1,1,new DateTime().getHourOfDay(),new DateTime().getMinuteOfHour()));
+
+        String result = dummyCar.getVRM();
+        assertEquals(expectedCar,result);
+    }
+
+    public void testGetLocations() {
+        String testFile = "testShuttles.txt";
+        int expectedListSize = 2;
+
+        ReadFromAsset readFromAsset = new ReadFromAsset();
+        Cars cars = readFromAsset.getCars(this.getContext(),testFile);
+        Locations locations = new Locations(cars);
+
+        int result = locations.getLocations().size();
+
+        assertEquals(expectedListSize,result);
+    }
+
 }

@@ -33,6 +33,7 @@ public class Cars {
                 journeys.add(car.getRestOfJourney(car.findNextDepartureFrom(location,now)));
             }
         }
+        if(journeys.size()==0) { return null;}
         Collections.sort(journeys);
         return journeys.get(0);
     }
@@ -44,6 +45,7 @@ public class Cars {
                 journeys.add(car.getRestOfJourney(car.findNextDepartureFrom(location,now)));
             }
         }
+        if(journeys.size()==0) { return null;}
         Collections.sort(journeys);
         for(Car car:journeys) {
             for(Destination destination1:car.getDestinations()) {

@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">DVLA Shuttle</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="descrip_label">Get a shuttle</string>
+    <string name="from_label">From</string>
+    <string name="to_label">To</string>
+    <string name="at">At</string>
+    <string name="time">12:00</string>
+    <string name="findShuttle">Find Shuttle</string>
 </resources>
