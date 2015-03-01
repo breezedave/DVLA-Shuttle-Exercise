@@ -1,2 +1,113 @@
-A1,Newport,12:00
-A1,Cardiff,12:20
+CV62CXB,Morriston (Depart),07:50
+CV62CXB,Morriston (Depart),08:27
+CV62CXB,Morriston (Depart),09:15
+CV62CXB,Morriston (Depart),10:15
+CV62CXB,Morriston (Depart),11:15
+CV62CXB,Morriston (Depart),12:55
+CV62CXB,Morriston (Depart),14:15
+CV62CXB,Morriston (Depart),15:15
+CV62CXB,Morriston (Depart),16:00
+CV62CXB,Morriston (Depart),16:40
+CV62CXB,Morriston (Depart),17:17
+CV62CXB,Morriston (Depart),12:05
+CV62CXC,Morriston (Depart),07:35
+CV62CXC,Morriston (Depart),08:15
+CV62CXC,Morriston (Depart),08:52
+CV62CXC,Morriston (Depart),09:48
+CV62CXC,Morriston (Depart),10:48
+CV62CXC,Morriston (Depart),11:48
+CV62CXC,Morriston (Depart),12:30
+CV62CXC,Morriston (Depart),13:15
+CV62CXC,Morriston (Depart),13:55
+CV62CXC,Morriston (Depart),14:48
+CV62CXC,Morriston (Depart),15:30
+CV62CXC,Morriston (Depart),16:20
+CV62CXB,Swansea Vale,08:05
+CV62CXB,Swansea Vale,08:42
+CV62CXB,Swansea Vale,09:30
+CV62CXB,Swansea Vale,10:30
+CV62CXB,Swansea Vale,11:30
+CV62CXB,Swansea Vale,13:15
+CV62CXB,Swansea Vale,14:40
+CV62CXB,Swansea Vale,15:35
+CV62CXB,Swansea Vale,16:15
+CV62CXB,Swansea Vale,16:55
+CV62CXB,Swansea Vale,17:34
+CV62CXB,Swansea Vale,12:25
+CV62CXC,Swansea Vale,07:48
+CV62CXC,Swansea Vale,08:30
+CV62CXC,Swansea Vale,09:07
+CV62CXC,Swansea Vale,10:03
+CV62CXC,Swansea Vale,11:03
+CV62CXC,Swansea Vale,12:03
+CV62CXC,Swansea Vale,12:45
+CV62CXC,Swansea Vale,13:30
+CV62CXC,Swansea Vale,14:10
+CV62CXC,Swansea Vale,15:03
+CV62CXC,Swansea Vale,15:45
+CV62CXC,Swansea Vale,16:35
+CV62CXB,Felindre,10:20
+CV62CXB,Felindre,11:20
+CV62CXB,Felindre,13:00
+CV62CXB,Felindre,12:10
+CV62CXC,Felindre,10:53
+CV62CXC,Felindre,11:53
+CV62CXC,Felindre,12:35
+CV62CXC,Felindre,13:20
+CV62CXC,Felindre,14:00
+CV62CXB,Felindre,10:42
+CV62CXB,Felindre,11:42
+CV62CXB,Felindre,13:30
+CV62CXB,Felindre,12:40
+CV62CXC,Felindre,10:15
+CV62CXC,Felindre,11:15
+CV62CXC,Felindre,12:15
+CV62CXC,Felindre,12:56
+CV62CXB,RLDC,08:08
+CV62CXB,RLDC,08:45
+CV62CXB,RLDC,09:33
+CV62CXB,RLDC,10:33
+CV62CXB,RLDC,11:33
+CV62CXB,RLDC,13:18
+CV62CXB,RLDC,14:43
+CV62CXB,RLDC,15:38
+CV62CXB,RLDC,16:18
+CV62CXB,RLDC,16:58
+CV62CXB,RLDC,17:37
+CV62CXB,RLDC,12:27
+CV62CXC,RLDC,07:51
+CV62CXC,RLDC,08:33
+CV62CXC,RLDC,09:10
+CV62CXC,RLDC,10:05
+CV62CXC,RLDC,11:06
+CV62CXC,RLDC,12:06
+CV62CXC,RLDC,12:47
+CV62CXC,RLDC,13:32
+CV62CXC,RLDC,14:12
+CV62CXC,RLDC,15:06
+CV62CXC,RLDC,15:52
+CV62CXC,RLDC,16:38
+CV62CXB,Morriston (Arrive),08:23
+CV62CXB,Morriston (Arrive),09:00
+CV62CXB,Morriston (Arrive),09:48
+CV62CXB,Morriston (Arrive),10:48
+CV62CXB,Morriston (Arrive),11:48
+CV62CXB,Morriston (Arrive),13:40
+CV62CXB,Morriston (Arrive),15:00
+CV62CXB,Morriston (Arrive),15:53
+CV62CXB,Morriston (Arrive),16:33
+CV62CXB,Morriston (Arrive),17:13
+CV62CXB,Morriston (Arrive),17:52
+CV62CXB,Morriston (Arrive),12:48
+CV62CXC,Morriston (Arrive),08:05
+CV62CXC,Morriston (Arrive),08:48
+CV62CXC,Morriston (Arrive),09:25
+CV62CXC,Morriston (Arrive),10:21
+CV62CXC,Morriston (Arrive),11:21
+CV62CXC,Morriston (Arrive),12:21
+CV62CXC,Morriston (Arrive),13:02
+CV62CXC,Morriston (Arrive),13:47
+CV62CXC,Morriston (Arrive),14:25
+CV62CXC,Morriston (Arrive),15:21
+CV62CXC,Morriston (Arrive),16:07
+CV62CXC,Morriston (Arrive),16:53

@@ -78,7 +78,7 @@ public class HomeScreenActivity extends ActionBarActivity {
                 if(result == null) {
                     resultTxt = "Route not found";
                 } else {
-                    resultTxt = result.getVRM() + result.getDestinations().get(0).toString();
+                    resultTxt = result.getVRM() + " " + result.getDestinations().get(0).toString();
                 }
                 resultView.setText(resultTxt);
             }
