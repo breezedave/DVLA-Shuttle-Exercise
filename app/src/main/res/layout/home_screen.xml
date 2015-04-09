@@ -121,11 +121,12 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="fill_parent"
-        android:textAlignment="center"
-        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:layout_centerHorizontal="true"
         android:layout_height="240dp"
         android:textColor="@color/white"
+        android:text="Please select your journey"
         />
     </RelativeLayout>
 

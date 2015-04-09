@@ -60,4 +60,35 @@ public class ReadFromAsset {
         return cars;
     }
 
+    public Params getParams(Context context, String filePath) {
+        Params params = new Params();
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(
+                    new InputStreamReader(
+                            context.getAssets().open(filePath)
+                    )
+            );
+
+            String mLine = reader.readLine();
+            while (mLine != null) {
+                String[] lineArr = mLine.split(":");
+                if(lineArr[0].equals("defaultFrom")) {params.setDefaultFrom(lineArr[1]);}
+                if(lineArr[0].equals("defaultTo")) {params.setDefaultTo(lineArr[1]);}
+                mLine = reader.readLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return params;
+    }
+
 }
