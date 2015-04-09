@@ -124,7 +124,7 @@
         android:layout_width="fill_parent"
         android:textAlignment="center"
         android:gravity="center"
-        android:layout_height="20dp"
+        android:layout_height="240dp"
         android:textColor="@color/white"
         />
     </RelativeLayout>

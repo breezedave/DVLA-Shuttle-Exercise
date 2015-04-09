@@ -75,10 +75,14 @@ public class HomeScreenActivity extends ActionBarActivity {
                 int min = Integer.parseInt(at.split(":")[1]);
                 Car result = cars.getNextCarTo(from,to,new DateTime(0,1,1,hr,min));
                 String resultTxt;
+                resultTxt = "";
                 if(result == null) {
-                    resultTxt = "Route not found";
+                    resultTxt += "\n Route not found";
                 } else {
-                    resultTxt = result.getVRM() + " " + result.getDestinations().get(0).toString();
+                    resultTxt = result.getVRM();
+                    for (int i = 0; i < result.getDestinations().size(); i++) {
+                        resultTxt += "\n" + result.getDestinations().get(i).toString();
+                    }
                 }
                 resultView.setText(resultTxt);
             }
