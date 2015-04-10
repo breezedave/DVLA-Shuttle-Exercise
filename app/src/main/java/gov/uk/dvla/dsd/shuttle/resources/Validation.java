@@ -1,11 +1,14 @@
 package gov.uk.dvla.dsd.shuttle.resources;
 
+import android.util.Log;
+
 /**
  * Created by breezed on 01/03/2015.
  */
 public class Validation {
     public boolean validateLoc(String value) {
-        if(value.length()>0) {return true;}
+        Log.i("validate","validate: " + value);
+        if(value!= null && value.length()>0) {return true;}
         return false;
     }
 

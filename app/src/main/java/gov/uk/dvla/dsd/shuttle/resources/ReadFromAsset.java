@@ -8,11 +8,42 @@ import org.joda.time.DateTime;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by breezed on 01/03/2015.
  */
 public class ReadFromAsset {
+    public List<String> getCarString(Context context, String filePath) {
+        ArrayList<String> carStrList = new ArrayList<String>();
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(
+                    new InputStreamReader(
+                            context.getAssets().open(filePath)
+                    )
+            );
+            String mLine = reader.readLine();
+            while (mLine != null) {
+                carStrList.add(mLine);
+                mLine = reader.readLine();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return carStrList;
+    }
+
+
     public Cars getCars(Context context, String filePath) {
         Cars cars = new Cars();
         BufferedReader reader = null;
@@ -59,7 +90,7 @@ public class ReadFromAsset {
         }
         return cars;
     }
-
+/*
     public Params getParams(Context context, String filePath) {
         Params params = new Params();
         BufferedReader reader = null;
@@ -90,5 +121,5 @@ public class ReadFromAsset {
         }
         return params;
     }
-
+*/
 }
